@@ -6,11 +6,6 @@
   height: 40vmin;
   pointer-events: none;
 }
-.homepage{
-  background-image: url('./images/Bg.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {

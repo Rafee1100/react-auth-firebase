@@ -1,17 +1,13 @@
-.navElement {
+.nav-items{
     text-decoration: none;
-    padding:10px;
-    margin:8px;
-    float: left;
-    font-size: 20px;
+    padding: 5px;
+    font-weight: 600;
+    margin: 8px;
     color: black;
 }
-.navElement:hover{
+.nav-items:hover{
     text-decoration: none;
 }
-.header{
-    display: flex;
-}
-h3{
-    margin: 10px;
+.navBar{
+    margin-top: 15px;
 }

@@ -11,30 +11,42 @@ import Header from './Component/Header/Header';
 import Home from './Component/Home/Home';
 import Destination from './Component/Destination/Destination';
 import Blog from './Component/Blog/Blog';
+import Login from './Component/Login/Login';
+import NotFound from './NotFound/NotFound';
 import Contact from './Component/Contact/Contact';
-import Login from './Component/Login/Login'
+import SignUp from './Component/SignUP/SignUp';
+
 
 function App() {
   return (
-   <Container className='homepage'>
+   <Container>
      <Router>
        <Header/>
        <Switch>
-         <Route path="/home">
-           <Home/>
-         </Route>
-         <Route path="/destination">
-           <Destination/>
-         </Route>
-         <Route path="/blog">
-           <Blog/>
-         </Route>
-         <Route path="/contact">
-           <Contact/>
-         </Route>
-         <Route path="/login">
-           <Login/>
-         </Route>
+        <Route path="/home">
+          <Home/>
+        </Route>
+        <Route path="/destination">
+          <Destination/>
+        </Route>
+        <Route path="/blog">
+          <Blog/>
+        </Route>
+        <Route path="/login">
+          <Login/>
+        </Route>
+        <Route path="/contact">
+          <Contact/>
+        </Route>
+        <Route path="/signup">
+          <SignUp/>
+        </Route>
+        <Route exact path="/">
+          <Home/>
+        </Route>
+        <Route path="*">
+          <NotFound/>
+        </Route>
 
        </Switch>
      </Router>
