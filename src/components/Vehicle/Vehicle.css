@@ -1,0 +1,15 @@
+.card-style{
+    height:auto;
+    border:none;
+    background-color:rgba(211, 211, 211, 0.301);
+    
+}
+.card-image{
+    height:210px;
+  
+}
+.vehicle-name{
+    font-size:35px;
+    font-weight:700;
+    color: Black;
+}
