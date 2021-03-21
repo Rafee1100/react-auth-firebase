@@ -17,29 +17,30 @@ const Destination = () => {
                        <img className="destImg" src="https://image.flaticon.com/icons/png/512/31/31884.png"/>
                        </div>
                        <div>
-                           <h6>Mirpur</h6>
+                           <p>Mirpur</p>
                            <br></br>
-                           <h6>Dhanmondi</h6>
+                           <p>Dhanmondi</p>
                        </div>
                    </Col>
                    <div className="d-flex details-vehicle">
                        {/* <img src=""/> */}
-                       <h6>Bike</h6>
+                       <p>Bike</p>
                        <span><img src={people}/>4</span>
-                       <h6>$70</h6>                
+                       <p>$70</p>                
                     </div>
                     <div className="d-flex details-vehicle">
                        {/* <img src=""/> */}
-                       <h6>Car</h6>
+                       <p>Bike</p>
                        <span><img src={people}/>4</span>
-                       <h6>$70</h6>                
+                       <p>$70</p>                
                     </div>
                     <div className="d-flex details-vehicle">
                        {/* <img src=""/> */}
-                       <h6>Car</h6>
+                       <p>Bike</p>
                        <span><img src={people}/>4</span>
-                       <h6>$70</h6>                
+                       <p>$70</p>                
                     </div>
+                   
 
                 </Col>
 

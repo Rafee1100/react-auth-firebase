@@ -13,4 +13,8 @@
     background-color:rgb(243, 138, 39);
     width:90%;
 }
-
+p{
+    color:black;
+    margin-left: 8px;
+    margin-right: 12px;
+}
