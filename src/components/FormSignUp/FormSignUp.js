@@ -150,7 +150,7 @@ const FormSignUp = () => {
                 }
 
             </form>
-            <p>{newUser ? 'Already have an acconut?' : 'I have no account '} <span><button onClick={handleNewUser} className="login-btn">{newUser ? 'Login' : 'Create Account'}</button></span></p>
+            <p>{newUser ? 'Already have an acconut?' : 'I have no account '} <span><button onClick={handleNewUser} className="login-btn">{newUser ? 'Login' : 'Create an account'}</button></span></p>
         </div>
 
     );

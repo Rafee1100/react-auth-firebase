@@ -7,8 +7,9 @@ import { createContext, useState } from 'react';
 import Login from './components/Login/Login';
 import Destination from './components/Destination/Destination';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
+import DestinationFinal from './components/DestinationFinal/DestinationFinal'
 
-export const UserContext = createContext()
+export const UserContext = createContext();
 
 function App() {
   const [loggedInUser, setLoggedInUser] = useState({});
@@ -25,6 +26,9 @@ function App() {
           <Route path="/home">
             <Home/>
           </Route>
+          <Route path="/header">
+            <Header />
+          </Route>
 
           <PrivateRoute path="/destination">
             <Destination/>
@@ -32,6 +36,9 @@ function App() {
 
           <Route path="/login">
             <Login />
+          </Route>
+          <Route path="/destinationFinal">
+            <DestinationFinal />
           </Route>
 
         </Switch>

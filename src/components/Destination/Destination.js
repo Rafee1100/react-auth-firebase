@@ -8,12 +8,12 @@ const Destination = () => {
         <Container>
             <Row>
                 <Col md={4} sm={12} className="p-2">
-                    <div className="desitination-place p d-flex align-items-center flex-column justify-content-center">
+                    <div className="desitination-place p d-flex align-items-center flex-column justify-content-left">
                         <label className="place-label" htmlFor="place-form">Pick From</label><br/>
                         <input ctype="text" name="place-from" /><br/>
-                        <label className="place-label"  htmlFor="place-to">Pick To</label><br/>
+                        <label className="place-label"  htmlFor="place-to">Drop To</label><br/>
                         <input type="text" name="place-to" /><br />
-                        <button className="btn btn-lg btn-success">Search</button><br/>
+                        <a href="../DestinationFinal/" className=""><button className="btn btn-lg searchBtn">Confirm</button><br/></a>
                     </div>
                 </Col>
 

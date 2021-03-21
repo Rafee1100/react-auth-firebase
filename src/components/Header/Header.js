@@ -7,6 +7,11 @@ import './Header.css'
 const Header = () => {
     const [loggedInUser]=useContext(UserContext);
     console.log(loggedInUser)
+    let isUserAvailable=false;
+    if(loggedInUser.name){
+        isUserAvailable=true;
+    }
+
     return (
         <div className="header">
             <Container>
@@ -20,8 +25,7 @@ const Header = () => {
                                 <Link className="px-md-4  py-md-2  link-nav" to="/destination" style={{textDecoration:'none'}}>Destination</Link>
                                 <Link className="px-md-4  py-md-2  link-nav" to="/blog" style={{textDecoration:'none'}}>Blog</Link>
                                 <Link className="px-md-4  py-md-2  link-nav" to="/contact" style={{textDecoration:'none'}}>Contact</Link>
-                                <Link  className="px-md-4  py-md-2  link-nav" to="/login" style={{textDecoration:'none'}}>Login</Link>
-                                <h5 className="mt-2" style={{color:'teal'}}>{loggedInUser.name}</h5>
+                                <Link  className="px-md-4  py-md-2  link-nav" to="/login" style={{textDecoration:'none'}}>{isUserAvailable? `${loggedInUser.name}`:'Login' }</Link>
                                
                             </Nav>
                         </Navbar.Collapse>
