@@ -13,6 +13,9 @@ const Destination = () => {
                         <input ctype="text" name="place-from" /><br/>
                         <label className="place-label"  htmlFor="place-to">Drop To</label><br/>
                         <input type="text" name="place-to" /><br />
+                        <label className="place-label"  htmlFor="date">Date</label><br/>
+                        <input type="date" name="Date" /><br />
+                        
                         <a href="../DestinationFinal/" className=""><button className="btn btn-lg searchBtn">Confirm</button><br/></a>
                     </div>
                 </Col>

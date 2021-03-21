@@ -15,11 +15,11 @@ const Header = () => {
     return (
         <div className="header">
             <Container>
-                    <Navbar expand="lg">
+                    <Navbar expand="d-flex justify-content-end  justify-content-md-end">
 
                         <Navbar.Brand className="title" href="/home">Cholo Jai</Navbar.Brand>
                         <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                        <Navbar.Collapse  className="d-flex justify-content-end  justify-content-md-end">
+                        <Navbar.Collapse  className="">
                             <Nav >
                                 <Link className="px-md-4  py-md-2 mt-sm-3 mt-md-0 link-nav" to="/home" style={{textDecoration:'none'}}>Home</Link>
                                 <Link className="px-md-4  py-md-2  link-nav" to="/destination" style={{textDecoration:'none'}}>Destination</Link>
